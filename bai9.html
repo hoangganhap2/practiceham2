@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a=[];
+    for(let i=0;i<10;i++){
+        a[i]=prompt("Nhập vào mảng ký tự");
+    }
+       let b=prompt("Nhập vào kí tự");
+    function checkb(b,a) {
+        let result=[];
+        for (let i = 0; i < a.length; i++) {
+            if (a[i]===b) {
+                result.push(i);
+            }
+        }
+        return result;
+        }
+        let count = checkb(b,a);
+        if (count.length > 0) {
+            alert(count.length);
+        } else
+            alert(-1);
+
+
+</script>
+</body>
+</html>
